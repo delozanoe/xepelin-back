@@ -1,3 +1,4 @@
+from fastapi import FastAPI
 
 from fastapi import FastAPI
 import http.client
@@ -33,4 +34,3 @@ def send_email(idOp, tasa, email):
 
     print(data.decode("utf-8"))
     return {"menssage": data.decode("utf-8")}
-
